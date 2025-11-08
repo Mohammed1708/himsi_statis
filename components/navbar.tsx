@@ -1,15 +1,17 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import Link from "next/link"
-import { Menu, X } from "lucide-react"
+import { useState } from "react";
+import { useRouter } from "next/navigation";
+import Link from "next/link";
+import { Menu, X } from "lucide-react";
 
 interface NavbarProps {
-  isScrolled: boolean
+  isScrolled: boolean;
 }
 
 export default function Navbar({ isScrolled }: NavbarProps) {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
+  const router = useRouter(); 
 
   const navLinks = [
     { href: "#beranda", label: "Beranda" },
@@ -18,12 +20,14 @@ export default function Navbar({ isScrolled }: NavbarProps) {
     { href: "#berita", label: "Berita" },
     { href: "#gabung", label: "Gabung Kami" },
     { href: "#kontak", label: "Kontak" },
-  ]
+  ];
 
   return (
     <nav
       className={`sticky top-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white shadow-lg border-b border-gray-100" : "bg-white border-b border-gray-100"
+        isScrolled
+          ? "bg-white shadow-lg border-b border-gray-100"
+          : "bg-white border-b border-gray-100"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -34,7 +38,9 @@ export default function Navbar({ isScrolled }: NavbarProps) {
               <span className="text-primary-foreground font-bold text-lg">H</span>
             </div>
             <div className="hidden sm:flex flex-col">
-              <span className="font-bold text-gray-900 text-sm md:text-base">HIMSI</span>
+              <span className="font-bold text-gray-900 text-sm md:text-base">
+                HIMSI
+              </span>
               <span className="text-xs text-gray-600">Nusa Mandiri</span>
             </div>
           </div>
@@ -54,7 +60,10 @@ export default function Navbar({ isScrolled }: NavbarProps) {
 
           {/* CTA Button & Mobile Menu */}
           <div className="flex items-center gap-3">
-            <button className="hidden sm:inline-flex px-4 py-2 bg-primary text-primary-foreground rounded-lg font-medium text-sm hover:shadow-lg transition-shadow">
+            <button
+              onClick={() => router.push("/pendaftaran")}
+              className="hidden sm:inline-flex px-4 py-2 bg-primary text-primary-foreground rounded-lg font-medium text-sm hover:shadow-lg transition-shadow"
+            >
               Gabung Sekarang
             </button>
 
@@ -81,12 +90,15 @@ export default function Navbar({ isScrolled }: NavbarProps) {
                 {link.label}
               </Link>
             ))}
-            <button className="w-full px-4 py-2 bg-primary text-primary-foreground rounded-lg font-medium text-sm hover:shadow-lg transition-shadow">
+            <button
+              onClick={() => router.push("/pendaftaran")}
+              className="w-full px-4 py-2 bg-primary text-primary-foreground rounded-lg font-medium text-sm hover:shadow-lg transition-shadow"
+            >
               Gabung Sekarang
             </button>
           </div>
         )}
       </div>
     </nav>
-  )
+  );
 }

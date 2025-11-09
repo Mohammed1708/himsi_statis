@@ -1,8 +1,10 @@
 "use client";
 import { useState } from "react";
 import { supabase } from "@/lib/supabaseClient";
+import Navbar from "@/components/navbar";
 
 export default function PendaftaranPage() {
+
   const [form, setForm] = useState({
     Nama: "",
     NIM: "",
@@ -29,7 +31,7 @@ export default function PendaftaranPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    const { error } = await supabase.from("pendaftar").insert([form]);
+    const { error } = await supabase.from("pendaftar_himsi").insert([form]);
 
     if (error) {
       console.error(error);
@@ -54,7 +56,8 @@ export default function PendaftaranPage() {
   };
 
   return (
-    <main className="max-w-2xl mx-auto p-6">
+    <main className="min-h-screen bg-background">
+      <Navbar isScrolled={false} />
       <h1 className="text-2xl font-bold mb-6 text-center">
         Form Pendaftaran HIMSI
       </h1>

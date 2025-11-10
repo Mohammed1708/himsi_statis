@@ -11,15 +11,15 @@ interface NavbarProps {
 
 export default function Navbar({ isScrolled }: NavbarProps) {
   const [isOpen, setIsOpen] = useState(false);
-  const router = useRouter(); 
+  const router = useRouter();
 
   const navLinks = [
-    { href: "#beranda", label: "Beranda" },
-    { href: "#tentang", label: "Tentang Kami" },
-    { href: "#kegiatan", label: "Kegiatan" },
-    { href: "#berita", label: "Berita" },
-    { href: "#gabung", label: "Gabung Kami" },
-    { href: "#kontak", label: "Kontak" },
+    { href: "/", label: "Beranda" },
+    { href: "/#tentang", label: "Tentang Kami" },
+    { href: "/#kegiatan", label: "Kegiatan" },
+    { href: "/#berita", label: "Berita" },
+    { href: "/#gabung", label: "Gabung Kami" },
+    { href: "/#kontak", label: "Kontak" },
   ];
 
   return (
@@ -35,7 +35,9 @@ export default function Navbar({ isScrolled }: NavbarProps) {
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center gap-2">
             <div className="w-10 h-10 md:w-12 md:h-12 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">H</span>
+              <span className="text-primary-foreground font-bold text-lg">
+                H
+              </span>
             </div>
             <div className="hidden sm:flex flex-col">
               <span className="font-bold text-gray-900 text-sm md:text-base">

@@ -78,146 +78,233 @@ export default function PendaftaranPage() {
           onSubmit={handleSubmit}
           className="space-y-4 max-w-md mx-auto bg-white/90 p-6 rounded-2xl shadow-lg"
         >
-          <input
-            name="Nama"
-            placeholder="Nama Lengkap"
-            value={form.Nama}
-            onChange={handleChange}
-            className="border p-2 w-full rounded font-normal"
-          />
-          <input
-            name="NIM"
-            placeholder="NIM"
-            value={form.NIM}
-            onChange={handleChange}
-            className="border p-2 w-full rounded font-normal"
-          />
-          <input
-            name="Semester"
-            placeholder="Semester"
-            value={form.Semester}
-            onChange={handleChange}
-            className="border p-2 w-full rounded font-normal"
-          />
+          {/* Nama */}
+          <div>
+            <label className="block text-gray-800 font-medium mb-1">
+              Masukan Nama Lengkap :
+            </label>
+            <input
+              name="Nama"
+              placeholder="Jane Doe"
+              value={form.Nama}
+              onChange={handleChange}
+              className="border p-2 w-full rounded font-normal placeholder:text-gray-500 placeholder:opacity-30"
+              required
+            />
+          </div>
 
-          <select
-            name="Asal_Kampus"
-            value={form.Asal_Kampus}
-            onChange={handleChange}
-            className="border p-2 w-full rounded bg-white/50 backdrop-blur-sm font-normal text-gray-700"
-          >
-            <option value="" className="text-gray-400 font-normal">
-              Pilih Asal Kampus
-            </option>
-            {kampusOptions.map((item) => (
-              <option key={item} value={item}>
-                {item}
+          {/* NIM */}
+          <div>
+            <label className="block text-gray-800 font-medium mb-1">
+              Masukan NIM :
+            </label>
+            <input
+              name="NIM"
+              placeholder="11233321"
+              value={form.NIM}
+              onChange={handleChange}
+              className="border p-2 w-full rounded font-normal placeholder:text-gray-500 placeholder:opacity-30"
+              required
+            />
+          </div>
+
+          {/* Semester */}
+          <div>
+            <label className="block text-gray-800 font-medium mb-1">
+              Semester :
+            </label>
+            <input
+              name="Semester"
+              placeholder="8"
+              value={form.Semester}
+              onChange={handleChange}
+              className="border p-2 w-full rounded font-normal placeholder:text-gray-500 placeholder:opacity-30"
+              required
+            />
+          </div>
+
+          {/* Asal Kampus */}
+          <div>
+            <label className="block text-gray-800 font-medium mb-1">
+              Asal Kampus :
+            </label>
+            <select
+              name="Asal_Kampus"
+              value={form.Asal_Kampus}
+              onChange={handleChange}
+              className="border p-2 w-full rounded bg-white/50 backdrop-blur-sm font-normal text-gray-700"
+              required
+            >
+              <option value="" className="text-gray-400/50 italic">
+                Pilih Asal Kampus
               </option>
-            ))}
-          </select>
+              {kampusOptions.map((item) => (
+                <option key={item} value={item}>
+                  {item}
+                </option>
+              ))}
+            </select>
+          </div>
 
-          <select
-            name="Tipe_kelas"
-            value={form.Tipe_kelas}
-            onChange={handleChange}
-            className="border p-2 w-full rounded bg-white/50 backdrop-blur-sm font-normal text-gray-700"
-          >
-            <option value="" className="text-gray-400 font-normal">
-              Pilih Tipe Kelas
-            </option>
-            {tipeKelasOptions.map((item) => (
-              <option key={item} value={item}>
-                {item}
+          {/* Tipe Kelas */}
+          <div>
+            <label className="block text-gray-800 font-medium mb-1">
+              Tipe Kelas :
+            </label>
+            <select
+              name="Tipe_kelas"
+              value={form.Tipe_kelas}
+              onChange={handleChange}
+              className="border p-2 w-full rounded bg-white/50 backdrop-blur-sm font-normal text-gray-700"
+              required
+            >
+              <option value="" className="text-gray-400/50 italic">
+                Pilih Tipe Kelas
               </option>
-            ))}
-          </select>
+              {tipeKelasOptions.map((item) => (
+                <option key={item} value={item}>
+                  {item}
+                </option>
+              ))}
+            </select>
+          </div>
 
-          <input
-            name="No_telp"
-            placeholder="No. Telepon"
-            value={form.No_telp}
-            onChange={handleChange}
-            className="border p-2 w-full rounded font-normal"
-          />
+          {/* No Telp */}
+          <div>
+            <label className="block text-gray-800 font-medium mb-1">
+              Nomor Telepon :
+            </label>
+            <input
+              name="No_telp"
+              placeholder="083344212124"
+              value={form.No_telp}
+              onChange={handleChange}
+              className="border p-2 w-full rounded font-normal placeholder:text-gray-500 placeholder:opacity-30"
+              required
+            />
+          </div>
 
-          <select
-            name="Department_1"
-            value={form.Department_1}
-            onChange={handleChange}
-            className="border p-2 w-full rounded bg-white/50 backdrop-blur-sm font-normal text-gray-700"
-          >
-            <option value="" className="text-gray-400 font-normal">
-              Pilih Department 1
-            </option>
-            {departmentOptions.map((item) => (
-              <option key={item} value={item}>
-                {item}
+          {/* Department 1 */}
+          <div>
+            <label className="block text-gray-800 font-medium mb-1">
+              Department 1 :
+            </label>
+            <select
+              name="Department_1"
+              value={form.Department_1}
+              onChange={handleChange}
+              className="border p-2 w-full rounded bg-white/50 backdrop-blur-sm font-normal text-gray-700"
+              required
+            >
+              <option value="" className="text-gray-400/50 italic">
+                Pilih Department 1
               </option>
-            ))}
-          </select>
+              {departmentOptions.map((item) => (
+                <option key={item} value={item}>
+                  {item}
+                </option>
+              ))}
+            </select>
+          </div>
 
-          <select
-            name="Department_2"
-            value={form.Department_2}
-            onChange={handleChange}
-            className="border p-2 w-full rounded bg-white/50 backdrop-blur-sm font-normal text-gray-700"
-          >
-            <option value="" className="text-gray-400 font-normal">
-              Pilih Department 2
-            </option>
-            {departmentOptions.map((item) => (
-              <option key={item} value={item}>
-                {item}
+          {/* Department 2 */}
+          <div>
+            <label className="block text-gray-800 font-medium mb-1">
+              Department 2 :
+            </label>
+            <select
+              name="Department_2"
+              value={form.Department_2}
+              onChange={handleChange}
+              className="border p-2 w-full rounded bg-white/50 backdrop-blur-sm font-normal text-gray-700"
+              required
+            >
+              <option value="" className="text-gray-400/50 italic">
+                Pilih Department 2
               </option>
-            ))}
-          </select>
+              {departmentOptions.map((item) => (
+                <option key={item} value={item}>
+                  {item}
+                </option>
+              ))}
+            </select>
+          </div>
 
-          <select
-            name="Posisi_1"
-            value={form.Posisi_1}
-            onChange={handleChange}
-            className="border p-2 w-full rounded bg-white/50 backdrop-blur-sm font-normal text-gray-700"
-          >
-            <option value="" className="text-gray-400 font-normal">
-              Pilih Posisi 1
-            </option>
-            {posisiOptions.map((item) => (
-              <option key={item} value={item}>
-                {item}
+          {/* Posisi 1 */}
+          <div>
+            <label className="block text-gray-800 font-medium mb-1">
+              Posisi 1 :
+            </label>
+            <select
+              name="Posisi_1"
+              value={form.Posisi_1}
+              onChange={handleChange}
+              className="border p-2 w-full rounded bg-white/50 backdrop-blur-sm font-normal text-gray-700"
+              required
+            >
+              <option value="" className="text-gray-400/50 italic">
+                Pilih Posisi 1
               </option>
-            ))}
-          </select>
+              {posisiOptions.map((item) => (
+                <option key={item} value={item}>
+                  {item}
+                </option>
+              ))}
+            </select>
+          </div>
 
-          <select
-            name="Posisi_2"
-            value={form.Posisi_2}
-            onChange={handleChange}
-            className="border p-2 w-full rounded bg-white/50 backdrop-blur-sm font-normal text-gray-700"
-          >
-            <option value="" className="text-gray-400 font-normal">
-              Pilih Posisi 2
-            </option>
-            {posisiOptions.map((item) => (
-              <option key={item} value={item}>
-                {item}
+          {/* Posisi 2 */}
+          <div>
+            <label className="block text-gray-800 font-medium mb-1">
+              Posisi 2 :
+            </label>
+            <select
+              name="Posisi_2"
+              value={form.Posisi_2}
+              onChange={handleChange}
+              className="border p-2 w-full rounded bg-white/50 backdrop-blur-sm font-normal text-gray-700"
+              required
+            >
+              <option value="" className="text-gray-400/50 italic">
+                Pilih Posisi 2
               </option>
-            ))}
-          </select>
+              {posisiOptions.map((item) => (
+                <option key={item} value={item}>
+                  {item}
+                </option>
+              ))}
+            </select>
+          </div>
 
-          <input
-            name="Tanggal_lahir"
-            type="date"
-            value={form.Tanggal_lahir}
-            onChange={handleChange}
-            className="border p-2 w-full rounded font-normal text-gray-700"
-          />
-          <input
-            name="Alamat_Email"
-            placeholder="Alamat Email"
-            value={form.Alamat_Email}
-            onChange={handleChange}
-            className="border p-2 w-full rounded font-normal"
-          />
+          {/* Tanggal Lahir */}
+          <div>
+            <label className="block text-gray-800 font-medium mb-1">
+              Tanggal Lahir :
+            </label>
+            <input
+              name="Tanggal_lahir"
+              type="date"
+              value={form.Tanggal_lahir}
+              onChange={handleChange}
+              className="border p-2 w-full rounded font-normal text-gray-700"
+              required
+            />
+          </div>
+
+          {/* Email */}
+          <div>
+            <label className="block text-gray-800 font-medium mb-1">
+              Alamat Email :
+            </label>
+            <input
+              name="Alamat_Email"
+              placeholder="jane@gmail.com"
+              value={form.Alamat_Email}
+              onChange={handleChange}
+              className="border p-2 w-full rounded font-normal placeholder:text-gray-500 placeholder:opacity-30"
+              required
+            />
+          </div>
 
           <button
             type="submit"
@@ -227,6 +314,7 @@ export default function PendaftaranPage() {
           </button>
         </form>
 
+        {/* Popup Notifikasi */}
         {showPopup && (
           <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
             <div className="bg-white rounded-2xl p-6 shadow-lg text-center max-w-sm">

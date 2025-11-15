@@ -15,7 +15,7 @@ export default function Kegiatan() {
       judul: "Seminar Tranformasi Digital",
       tanggal: "22 Mei 2025",
       deskripsi: "HIMSI Universitas Nusa Mandiri sukses menggelar seminar kolaboratif dengan NIC bertema “Transformasi Digital: Menyongsong Era Bisnis Berbasis Data dan AI”. Kegiatan ini menghadirkan narasumber inspiratif yang membagikan wawasan tentang pemanfaatan data dan AI untuk efisiensi dan inovasi bisnis, mengajak peserta memahami transformasi digital sebagai kunci menghadapi perkembangan industri. Acara berlangsung meriah dengan antusiasme peserta yang aktif berdiskusi, merefleksikan komitmen HIMSI dalam menyediakan wadah pengembangan pengetahuan yang relevan dengan perkembangan zaman.",
-      image: "/STD.jpg",
+      image: "/std.jpg",
     },
     {
       judul: "Studi Banding HIMSI UNM X HIMASI STTNF",
@@ -27,7 +27,7 @@ export default function Kegiatan() {
       judul: "PMinKref HIMSI X HIMMA",
       tanggal: "4 Juli 2025",
       deskripsi: "HIMSI Universitas Nusa Mandiri berkolaborasi dengan HIMMA sukses menyelenggarakan MinKref (Mini Kreatif), sebuah workshop desain poster yang bertujuan mengembangkan potensi dan kreativitas mahasiswa. Kegiatan ini menjadi wadah bagi peserta untuk mempelajari dasar-dasar desain grafis hingga teknik praktis pembuatan poster dalam suasana yang hangat dan interaktif. Melalui workshop ini, peserta tidak hanya mendapat pengetahuan baru, tetapi juga kesempatan berkreasi langsung dan bertukar ide secara menyenangkan.",
-      image: "/PMINKREF.jpg",
+      image: "/pminkref.jpg",
     },
   ]
 

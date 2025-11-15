@@ -10,7 +10,7 @@ export default function Berita() {
       tanggal: "20 Agustus 2025",
       ringkasan:
         "HIMSI UNM gelar kelas AI untuk literasi teknologi siswa SMK Raflesia Depok.",
-      image: "/NGAJAR1.jpg",
+      image: "/ngajar.jpg",
     },
     {
       judul: "Kerjasama HIMSI dengan PT Tech Innovation",

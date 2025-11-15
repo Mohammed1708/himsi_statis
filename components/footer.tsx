@@ -1,5 +1,7 @@
 "use client"
 
+import Image from "next/image"
+
 export default function Footer() {
   const currentYear = new Date().getFullYear()
 
@@ -12,20 +14,29 @@ export default function Footer() {
   ]
 
   return (
-    <footer className="bg-gray-900 text-white py-12">
+    <footer className="bg-[#880c0c] text-[oklch(0.82_0.12_90)] py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
+
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                <span className="font-bold text-white">H</span>
+              <div className="w-10 h-10 md:w-12 md:h-12 rounded-lg overflow-hidden">
+                <Image
+                  src="/logohimsi2.webp"
+                  alt="Logo"
+                  width={48}
+                  height={48}
+                  className="w-full h-full object-cover"
+                />
               </div>
+
               <div>
                 <p className="font-bold">HIMSI</p>
                 <p className="text-xs text-gray-400">Nusa Mandiri</p>
               </div>
             </div>
+
             <p className="text-sm text-gray-400">
               Wadah mahasiswa Sistem Informasi untuk berkarya, belajar, dan berkontribusi.
             </p>
@@ -37,7 +48,10 @@ export default function Footer() {
             <ul className="space-y-2">
               {footerLinks.map((link) => (
                 <li key={link.href}>
-                  <a href={link.href} className="text-sm text-gray-400 hover:text-primary transition-colors">
+                  <a
+                    href={link.href}
+                    className="text-sm text-gray-400 hover:text-primary transition-colors"
+                  >
                     {link.label}
                   </a>
                 </li>
@@ -45,7 +59,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Empty grid cells for spacing */}
           <div />
           <div />
         </div>

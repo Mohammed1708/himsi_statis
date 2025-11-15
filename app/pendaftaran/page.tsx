@@ -63,7 +63,7 @@ export default function PendaftaranPage() {
     <main
       className="min-h-screen relative bg-center bg-no-repeat bg-contain"
       style={{
-        backgroundImage: "url('/logohimsi.png')",
+        backgroundImage: "url('/logohimsi2.webp')",
         backgroundSize: "38%",
       }}
     >

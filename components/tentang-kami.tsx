@@ -2,12 +2,12 @@
 
 export default function TentangKami() {
   const pengurus = [
-    { jabatan: "Ketua", nama: "Muhammad Ridho" },
-    { jabatan: "Wakil Ketua", nama: "Siti Nurhaliza" },
-    { jabatan: "Sekretaris", nama: "Budi Santoso" },
-    { jabatan: "Bendahara", nama: "Dewi Lestari" },
-    { jabatan: "Divisi Akademik", nama: "Ahmad Rahman" },
-    { jabatan: "Divisi Sosial", nama: "Lisa Mardiana" },
+    { jabatan: "Ketua", nama: "Sunitra Indah Putri" },
+    { jabatan: "Wakil Ketua", nama: "Tiara putri Ad'haini" },
+    { jabatan: "Sekretaris 1", nama: "Salsa Nur Aini" },
+    { jabatan: "Sekretaris 2", nama: "Rifqi Tsanaya" },
+    { jabatan: "Bendahara 1", nama: "Adinda Wulandari" },
+    { jabatan: "Bendahara 2", nama: "Bunga Rifanisa Alzannah" },
   ]
 
   return (

@@ -5,12 +5,12 @@ import { Clock, User } from "lucide-react"
 export default function Berita() {
   const berita = [
     {
-      judul: "HIMSI Raih Penghargaan Organisasi Terbaik",
-      author: "Admin HIMSI",
-      tanggal: "1 Desember 2024",
+      judul: "HIMSI Mengajar: Inisiatif untuk Pendidikan Digital",
+      author: "HIMSI",
+      tanggal: "20 Agustus 2025",
       ringkasan:
-        "HIMSI Universitas Nusa Mandiri meraih penghargaan sebagai organisasi terbaik dalam kategori inovasi dan kreativitas.",
-      image: "/penghargaan.jpg",
+        "HIMSI UNM gelar kelas AI untuk literasi teknologi siswa SMK Raflesia Depok.",
+      image: "/NGAJAR1.jpg",
     },
     {
       judul: "Kerjasama HIMSI dengan PT Tech Innovation",

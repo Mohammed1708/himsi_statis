@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 interface NavbarProps {
   isScrolled: boolean;
@@ -32,13 +33,19 @@ export default function Navbar({ isScrolled }: NavbarProps) {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 md:h-20">
+          
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center gap-2">
-            <div className="w-10 h-10 md:w-12 md:h-12 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">
-                H
-              </span>
+            <div className="w-10 h-10 md:w-12 md:h-12 rounded-lg overflow-hidden">
+              <Image
+                src="/logohimsi2.webp"
+                alt="Logo"
+                width={48}
+                height={48}
+                className="w-full h-full object-cover"
+              />
             </div>
+
             <div className="hidden sm:flex flex-col">
               <span className="font-bold text-gray-900 text-sm md:text-base">
                 HIMSI
@@ -60,7 +67,7 @@ export default function Navbar({ isScrolled }: NavbarProps) {
             ))}
           </div>
 
-          {/* CTA Button & Mobile Menu */}
+          {/* CTA Button + Mobile Button */}
           <div className="flex items-center gap-3">
             <button
               onClick={() => router.push("/pendaftaran")}
@@ -92,6 +99,7 @@ export default function Navbar({ isScrolled }: NavbarProps) {
                 {link.label}
               </Link>
             ))}
+
             <button
               onClick={() => router.push("/pendaftaran")}
               className="w-full px-4 py-2 bg-primary text-primary-foreground rounded-lg font-medium text-sm hover:shadow-lg transition-shadow"

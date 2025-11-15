@@ -5,29 +5,29 @@ import { Calendar } from "lucide-react"
 export default function Kegiatan() {
   const kegiatan = [
     {
-      judul: "Seminar Teknologi",
-      tanggal: "15 Desember 2024",
+      judul: "HIMSI Open Class",
+      tanggal: "3 Mei - 22 Juni 2025",
       deskripsi:
-        "Seminar menghadirkan pembicara dari industri teknologi terkemuka membahas tren AI dan teknologi masa depan.",
-      image: "/seminar-teknologi.jpg",
+        "HIMSI Unusa Mandiri menyelenggarakan HIMSI Open Class dari 3 Mei hingga 22 Juni 2025 via Zoom, menawarkan kelas Front-End dan Back-End Development yang masing-masing terdiri dari delapan pertemuan dengan bimbingan mentor berpengalaman. Melalui program ini, peserta tidak hanya mendapatkan pembelajaran teori tetapi juga praktik via mini project, serta manfaat seperti mentoring eksklusif dan sertifikat kompetensi, sehingga berhasil mendapat sambutan positif dari mahasiswa yang ingin mendalami coding dan pengembangan web.",
+      image: "/openclass.jpg",
     },
     {
-      judul: "Workshop Coding",
-      tanggal: "22 Desember 2024",
-      deskripsi: "Workshop intensif untuk meningkatkan skill coding mahasiswa dalam bahasa pemrograman modern.",
-      image: "/workshop-coding.jpg",
+      judul: "Seminar Tranformasi Digital",
+      tanggal: "22 Mei 2025",
+      deskripsi: "HIMSI Universitas Nusa Mandiri sukses menggelar seminar kolaboratif dengan NIC bertema “Transformasi Digital: Menyongsong Era Bisnis Berbasis Data dan AI”. Kegiatan ini menghadirkan narasumber inspiratif yang membagikan wawasan tentang pemanfaatan data dan AI untuk efisiensi dan inovasi bisnis, mengajak peserta memahami transformasi digital sebagai kunci menghadapi perkembangan industri. Acara berlangsung meriah dengan antusiasme peserta yang aktif berdiskusi, merefleksikan komitmen HIMSI dalam menyediakan wadah pengembangan pengetahuan yang relevan dengan perkembangan zaman.",
+      image: "/STD.jpg",
     },
     {
-      judul: "Bakti Sosial",
-      tanggal: "29 Desember 2024",
-      deskripsi: "Program memberikan kembali kepada masyarakat melalui berbagai kegiatan sosial dan edukasi.",
-      image: "/bakti-sosial.jpg",
+      judul: "Studi Banding HIMSI UNM X HIMASI STTNF",
+      tanggal: "14 Juni 2025",
+      deskripsi: "Dalam rangka mempererat silaturahmi dan meningkatkan kualitas organisasi, HIMSI UNM berkolaborasi dengan HIMASI STT NF menyelenggarakan Studi Banding bertema “Menguatkan Sinergi, Membangun Kolaborasi” pada 14 Juni 2025 di Depok. Kegiatan ini menjadi ajang strategis bagi kedua himpunan untuk saling berbagi pengalaman, bertukar ide, serta memperluas wawasan pengelolaan organisasi melalui diskusi, presentasi, dan forum interaktif, sehingga diharapkan dapat melahirkan inovasi kolaboratif dan memperkuat hubungan antarlembaga.",
+      image: "/stuban.jpg",
     },
     {
-      judul: "Pelatihan Kepemimpinan",
-      tanggal: "5 Januari 2025",
-      deskripsi: "Pelatihan untuk mengembangkan skill kepemimpinan dan komunikasi bagi anggota organisasi.",
-      image: "/pelatihan-kepemimpinan.jpg",
+      judul: "PMinKref HIMSI X HIMMA",
+      tanggal: "4 Juli 2025",
+      deskripsi: "HIMSI Universitas Nusa Mandiri berkolaborasi dengan HIMMA sukses menyelenggarakan MinKref (Mini Kreatif), sebuah workshop desain poster yang bertujuan mengembangkan potensi dan kreativitas mahasiswa. Kegiatan ini menjadi wadah bagi peserta untuk mempelajari dasar-dasar desain grafis hingga teknik praktis pembuatan poster dalam suasana yang hangat dan interaktif. Melalui workshop ini, peserta tidak hanya mendapat pengetahuan baru, tetapi juga kesempatan berkreasi langsung dan bertukar ide secara menyenangkan.",
+      image: "/PMINKREF.jpg",
     },
   ]
 
@@ -44,7 +44,7 @@ export default function Kegiatan() {
               style={{ animationDelay: `${idx * 100}ms` }}
             >
               {/* Image */}
-              <div className="relative h-48 overflow-hidden bg-gray-200">
+              <div className="relative h-70 overflow-hidden bg-gray-200">
                 <img
                   src={item.image || "/placeholder.svg"}
                   alt={item.judul}

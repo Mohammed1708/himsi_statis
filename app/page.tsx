@@ -5,11 +5,12 @@ import Navbar from "@/components/navbar"
 import Hero from "@/components/hero"
 import VisiMisi from "@/components/visi-misi"
 import TentangKami from "@/components/tentang-kami"
-import Kegiatan from "@/components/kegiatan"
-import Berita from "@/components/berita"
-import GabungKami from "@/components/gabung-kami"
+import Kegiatan from "@/components/berita"
+import Berita from "@/components/pengumuman"
+import GabungKami from "@/components/kegiatan"
 import Kontak from "@/components/kontak"
 import Footer from "@/components/footer"
+import Pengumuman from "@/components/pengumuman"
 
 export default function Home() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -30,7 +31,7 @@ export default function Home() {
       <TentangKami />
       <Kegiatan />
       <Berita />
-      <GabungKami />
+      <Pengumuman />
       <Kontak />
       <Footer />
     </main>

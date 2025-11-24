@@ -1,21 +1,9 @@
-export default function AdminLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+import { ReactNode } from 'react';
+
+export default function AdminLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="id">
-      <body
-        style={{
-          margin: 0,
-          padding: 0,
-          fontFamily:
-            "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial",
-          background: "#f5f5f7",
-        }}
-      >
-        {children}
-      </body>
-    </html>
+    <div style={{ margin: 0, padding: 0, background: "#f5f5f7" }}>
+      {children}
+    </div>
   );
 }

@@ -38,7 +38,7 @@ export default function Navbar({ isScrolled }: NavbarProps) {
           <div className="shrink-0 flex items-center gap-2">
             <div className="w-10 h-10 md:w-12 md:h-12 rounded-lg overflow-hidden">
               <Image
-                src="/logohimsi2.webp"
+                src="/logohimsi2.png"
                 alt="Logo"
                 width={48}
                 height={48}

@@ -23,7 +23,7 @@ export default function Footer() {
             <div className="flex items-center gap-3 mb-4">
               <div className="w-10 h-10 md:w-12 md:h-12 rounded-lg overflow-hidden">
                 <Image
-                  src="/logohimsi2.webp"
+                  src="/logohimsi2.png"
                   alt="Logo"
                   width={48}
                   height={48}

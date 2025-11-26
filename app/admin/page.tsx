@@ -72,7 +72,7 @@ export default function AdminLoginPage() {
       >
         {/* Logo */}
         <img
-          src="/logohimsi2.webp"
+          src="/logohimsi2.jpg"
           alt="Logo"
           style={{
             width: 55,
@@ -149,9 +149,7 @@ export default function AdminLoginPage() {
           onMouseEnter={(e) =>
             (e.currentTarget.style.transform = "scale(1.04)")
           }
-          onMouseLeave={(e) =>
-            (e.currentTarget.style.transform = "scale(1)")
-          }
+          onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
         >
           {loading ? "Loading..." : "Masuk"}
         </button>

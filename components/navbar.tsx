@@ -19,7 +19,7 @@ export default function Navbar({ isScrolled }: NavbarProps) {
     { href: "/#tentang", label: "Tentang Kami" },
     { href: "/#kegiatan", label: "Kegiatan" },
     { href: "/#berita", label: "Berita" },
-    { href: "/#gabung", label: "Gabung Kami" },
+    { href: "/#pengumuman", label: "Pengumuman" },
     { href: "/#kontak", label: "Kontak" },
   ];
 

@@ -34,7 +34,7 @@ export default function HeroSlider() {
         {slides.map((slide, index) => (
           <div
             key={slide.id}
-            className={`w-full transition-opacity duration-500 ease-in-out ${
+            className={`w-full transition-opacity duration-800 ease-in-out ${
               index === currentSlide 
                 ? "opacity-100 block" 
                 : "opacity-0 absolute top-0 left-0"
@@ -58,7 +58,7 @@ export default function HeroSlider() {
             key={index}
             onClick={() => goToSlide(index)}
             className={`w-3 h-3 rounded-full transition-colors cursor-pointer ${
-              index === currentSlide ? "bg-gray-600" : "bg-red-600"
+              index === currentSlide ? "bg-gray-300" : "bg-white"
             }`}
             aria-label={`Go to slide ${index + 1}`}
           />

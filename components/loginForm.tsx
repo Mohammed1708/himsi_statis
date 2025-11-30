@@ -1,8 +1,13 @@
 "use client";
 
 import React, { useState } from "react";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+
 
 export default function LoginForm() {
+  const router = useRouter(); // <-- WAJIB DI SINI
+
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState<string | null>(null);
@@ -10,33 +15,39 @@ export default function LoginForm() {
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
-  e.preventDefault();
-  setError(null);
-  setSuccess(null);
-  setLoading(true);
+    e.preventDefault();
+    setError(null);
+    setSuccess(null);
+    setLoading(true);
 
-  try {
-    const res = await fetch("/api/login", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ username, password }),
-    });
+    try {
+      const res = await fetch("/api/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ username, password }),
+      });
 
-    const data = await res.json();
+      const data = await res.json();
 
-    if (!res.ok || !data.success) {
-      setError(data.message || "Login gagal");
-    } else {
-      setSuccess(data.message); // "Berhasil login sebagai ADMIN / BENDAHARA / PUBDOK"
+      if (!res.ok || !data.success) {
+        setError(data.message || "Login gagal");
+        setLoading(false);
+        return;
+      }
+
+      // SUCCESS
+      setSuccess(data.message);
+
+      setTimeout(() => {
+        router.push("/admin/backoffice");
+      }, 3000);
+
+      setLoading(false);
+    } catch (err) {
+      setError("Terjadi kesalahan saat login");
+      setLoading(false);
     }
-  } catch (err) {
-    setError("Terjadi error jaringan");
-  }
-
-  setLoading(false);
-};
+  };
 
 
   return (

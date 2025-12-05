@@ -11,7 +11,9 @@ export const metadata: Metadata = {
   title: "HIMSI - Himpunan Mahasiswa Sistem Informasi",
   description:
     "HIMSI Universitas Nusa Mandiri - Wadah mahasiswa Sistem Informasi untuk berkarya, belajar, dan berkontribusi",
-  generator: "v0.app",
+  icons: {
+    icon: "/logohimsi2.png",
+  },
 }
 
 export default function RootLayout({

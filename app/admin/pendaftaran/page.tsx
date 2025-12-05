@@ -13,8 +13,6 @@ interface Pendaftaran {
   email: string
   noTelepon: string
   tglDaftar: string
-  status: "pending" | "approved" | "rejected"
-  institusi?: string
 }
 
 const dummyPendaftaran: Pendaftaran[] = [
@@ -24,8 +22,6 @@ const dummyPendaftaran: Pendaftaran[] = [
     email: "ahmad@example.com",
     noTelepon: "08123456789",
     tglDaftar: "2025-01-15",
-    status: "pending",
-    institusi: "Universitas Indonesia",
   },
   {
     id: "2",
@@ -33,8 +29,6 @@ const dummyPendaftaran: Pendaftaran[] = [
     email: "siti@example.com",
     noTelepon: "08198765432",
     tglDaftar: "2025-01-14",
-    status: "approved",
-    institusi: "ITB",
   },
   {
     id: "3",
@@ -42,8 +36,6 @@ const dummyPendaftaran: Pendaftaran[] = [
     email: "budi@example.com",
     noTelepon: "08134567890",
     tglDaftar: "2025-01-13",
-    status: "pending",
-    institusi: "Universitas Gadjah Mada",
   },
   {
     id: "4",
@@ -51,8 +43,6 @@ const dummyPendaftaran: Pendaftaran[] = [
     email: "rina@example.com",
     noTelepon: "08156789012",
     tglDaftar: "2025-01-12",
-    status: "rejected",
-    institusi: "Universitas Brawijaya",
   },
   {
     id: "5",
@@ -60,8 +50,6 @@ const dummyPendaftaran: Pendaftaran[] = [
     email: "dwi@example.com",
     noTelepon: "08167890123",
     tglDaftar: "2025-01-11",
-    status: "approved",
-    institusi: "UNAIR",
   },
 ]
 
@@ -112,42 +100,12 @@ export default function PendaftaranPage() {
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-1 gap-4">
               <Card>
                 <CardContent className="pt-6">
                   <div className="text-center">
                     <div className="text-2xl font-bold text-foreground">{registrations.length}</div>
                     <div className="text-sm text-muted-foreground">Total Pendaftaran</div>
-                  </div>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardContent className="pt-6">
-                  <div className="text-center">
-                    <div className="text-2xl font-bold text-green-600">
-                      {registrations.filter((r) => r.status === "approved").length}
-                    </div>
-                    <div className="text-sm text-muted-foreground">Disetujui</div>
-                  </div>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardContent className="pt-6">
-                  <div className="text-center">
-                    <div className="text-2xl font-bold text-yellow-600">
-                      {registrations.filter((r) => r.status === "pending").length}
-                    </div>
-                    <div className="text-sm text-muted-foreground">Menunggu</div>
-                  </div>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardContent className="pt-6">
-                  <div className="text-center">
-                    <div className="text-2xl font-bold text-red-600">
-                      {registrations.filter((r) => r.status === "rejected").length}
-                    </div>
-                    <div className="text-sm text-muted-foreground">Ditolak</div>
                   </div>
                 </CardContent>
               </Card>
@@ -167,10 +125,7 @@ export default function PendaftaranPage() {
                         <th className="text-left py-3 px-4 font-semibold text-foreground">Nama</th>
                         <th className="text-left py-3 px-4 font-semibold text-foreground">Email</th>
                         <th className="text-left py-3 px-4 font-semibold text-foreground">Telepon</th>
-                        <th className="text-left py-3 px-4 font-semibold text-foreground">Institusi</th>
                         <th className="text-left py-3 px-4 font-semibold text-foreground">Tgl Daftar</th>
-                        <th className="text-left py-3 px-4 font-semibold text-foreground">Status</th>
-                        <th className="text-left py-3 px-4 font-semibold text-foreground">Aksi</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -179,41 +134,12 @@ export default function PendaftaranPage() {
                           <td className="py-3 px-4 text-foreground">{reg.nama}</td>
                           <td className="py-3 px-4 text-muted-foreground">{reg.email}</td>
                           <td className="py-3 px-4 text-muted-foreground">{reg.noTelepon}</td>
-                          <td className="py-3 px-4 text-muted-foreground">{reg.institusi || "-"}</td>
                           <td className="py-3 px-4 text-muted-foreground">{reg.tglDaftar}</td>
                           <td className="py-3 px-4">
-                            <span
-                              className={`px-3 py-1 rounded-full text-xs font-semibold ${getStatusColor(reg.status)}`}
-                            >
-                              {reg.status === "pending"
-                                ? "Menunggu"
-                                : reg.status === "approved"
-                                  ? "Disetujui"
-                                  : "Ditolak"}
-                            </span>
+                            
                           </td>
                           <td className="py-3 px-4">
                             <div className="flex gap-2">
-                              {reg.status === "pending" && (
-                                <>
-                                  <Button
-                                    size="sm"
-                                    variant="outline"
-                                    onClick={() => handleApprove(reg.id)}
-                                    className="text-green-600 hover:text-green-700"
-                                  >
-                                    Setujui
-                                  </Button>
-                                  <Button
-                                    size="sm"
-                                    variant="outline"
-                                    onClick={() => handleReject(reg.id)}
-                                    className="text-red-600 hover:text-red-700"
-                                  >
-                                    Tolak
-                                  </Button>
-                                </>
-                              )}
                               <Button size="sm" variant="ghost" onClick={() => handleDelete(reg.id)}>
                                 <Trash2 className="w-4 h-4" />
                               </Button>

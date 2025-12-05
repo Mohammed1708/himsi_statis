@@ -17,77 +17,81 @@ const semuaBerita = [
     image: "/openclass.jpg",
     deskripsi: "HIMSI Unusa Mandiri menyelenggarakan HIMSI Open Class dari 3 Mei hingga 22 Juni 2025 via Zoom, menawarkan kelas Front-End dan Back-End Development yang masing-masing terdiri dari delapan pertemuan dengan bimbingan mentor berpengalaman.",
     kontenLengkap: `
-      <p class="lead">Himpunan Mahasiswa Sistem Informasi (HIMSI) Universitas Nusa Mandiri kembali menunjukkan komitmennya dalam mendukung peningkatan kompetensi mahasiswa di bidang teknologi dengan menyelenggarakan <em>HIMSI Open Class</em>. Program ini berlangsung secara daring melalui platform Zoom dan dirancang untuk memberikan pembelajaran terstruktur bagi mahasiswa yang ingin mengembangkan kemampuan di bidang pemrograman dan pengembangan web.</p>
+      <p style="font-size: 1.125rem; color: #374151; line-height: 1.75; margin-bottom: 1.5rem; font-weight: 500;">
+        Himpunan Mahasiswa Sistem Informasi (HIMSI) Universitas Nusa Mandiri kembali menunjukkan komitmennya dalam mendukung peningkatan kompetensi mahasiswa di bidang teknologi dengan menyelenggarakan HIMSI Open Class. Program ini berlangsung secara daring melalui platform Zoom dan dirancang untuk memberikan pembelajaran terstruktur bagi mahasiswa yang ingin mengembangkan kemampuan di bidang pemrograman dan pengembangan web.
+      </p>
       
-      <h3>📚 Kelas yang Ditawarkan</h3>
-      <p>Kegiatan ini menawarkan dua kelas utama:</p>
-      <div class="program-grid">
-        <div class="program-card">
-          <h4>Front-End Development</h4>
-          <ul>
-            <li>HTML, CSS, JavaScript Modern</li>
-            <li>React.js Fundamentals</li>
-            <li>Responsive Design</li>
+      <h3 style="font-size: 1.25rem; font-weight: 700; color: #111827; margin: 2rem 0 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid #3b82f6;">Kelas yang Ditawarkan</h3>
+      <p style="color: #4b5563; margin-bottom: 1rem; line-height: 1.625;">Kegiatan ini menawarkan dua kelas utama:</p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin: 1.5rem 0;">
+        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 0.75rem; padding: 1.5rem;">
+          <h4 style="font-size: 1.125rem; font-weight: 600; color: #111827; margin-bottom: 1rem;">Front-End Development</h4>
+          <ul style="color: #4b5563; list-style-type: disc; padding-left: 1.25rem; line-height: 1.625;">
+            <li style="margin-bottom: 0.5rem;">HTML, CSS, JavaScript Modern</li>
+            <li style="margin-bottom: 0.5rem;">React.js Fundamentals</li>
+            <li style="margin-bottom: 0.5rem;">Responsive Design</li>
             <li>8x Pertemuan Intensif</li>
           </ul>
         </div>
-        <div class="program-card">
-          <h4>Back-End Development</h4>
-          <ul>
-            <li>Node.js & Express.js</li>
-            <li>Database Management</li>
-            <li>API Development</li>
+        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 0.75rem; padding: 1.5rem;">
+          <h4 style="font-size: 1.125rem; font-weight: 600; color: #111827; margin-bottom: 1rem;">Back-End Development</h4>
+          <ul style="color: #4b5563; list-style-type: disc; padding-left: 1.25rem; line-height: 1.625;">
+            <li style="margin-bottom: 0.5rem;">Node.js & Express.js</li>
+            <li style="margin-bottom: 0.5rem;">Database Management</li>
+            <li style="margin-bottom: 0.5rem;">API Development</li>
             <li>8x Pertemuan Mendalam</li>
           </ul>
         </div>
       </div>
 
-      <h3>🎯 Metode Pembelajaran</h3>
-      <p>Melalui <em>HIMSI Open Class</em>, peserta tidak hanya mempelajari teori, tetapi juga diberikan kesempatan untuk:</p>
-      <ul>
-        <li><strong>Mini Project</strong> sebagai bentuk penerapan materi</li>
-        <li><strong>Mentoring Eksklusif</strong> dengan praktisi industri</li>
-        <li><strong>Code Review</strong> langsung dari mentor</li>
+      <h3 style="font-size: 1.25rem; font-weight: 700; color: #111827; margin: 2rem 0 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid #3b82f6;">Metode Pembelajaran</h3>
+      <p style="color: #4b5563; margin-bottom: 1rem; line-height: 1.625;">Melalui HIMSI Open Class, peserta tidak hanya mempelajari teori, tetapi juga diberikan kesempatan untuk:</p>
+      <ul style="color: #4b5563; list-style-type: disc; padding-left: 1.25rem; margin-bottom: 1.5rem; line-height: 1.625;">
+        <li style="margin-bottom: 0.5rem;"><strong>Mini Project</strong> sebagai bentuk penerapan materi</li>
+        <li style="margin-bottom: 0.5rem;"><strong>Mentoring Eksklusif</strong> dengan praktisi industri</li>
+        <li style="margin-bottom: 0.5rem;"><strong>Code Review</strong> langsung dari mentor</li>
         <li><strong>Portfolio Building</strong> untuk persiapan karir</li>
       </ul>
 
-      <h3>💫 Manfaat yang Didapat</h3>
-      <div class="benefits-grid">
-        <div class="benefit-item">
-          <span class="benefit-icon">🎓</span>
+      <h3 style="font-size: 1.25rem; font-weight: 700; color: #111827; margin: 2rem 0 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid #3b82f6;">Manfaat yang Didapat</h3>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.25rem; margin: 1.5rem 0;">
+        <div style="display: flex; align-items: flex-start; gap: 1rem; background: #f0f9ff; padding: 1.25rem; border-radius: 0.75rem; border: 1px solid #e0f2fe;">
+          <span style="font-size: 1.5rem; flex-shrink: 0;">🎓</span>
           <div>
-            <strong>Sertifikat Kompetensi</strong>
-            <p>Pengakuan resmi atas keterampilan yang dikuasai</p>
+            <strong style="display: block; color: #111827; margin-bottom: 0.25rem;">Sertifikat Kompetensi</strong>
+            <p style="color: #4b5563; font-size: 0.875rem; line-height: 1.5;">Pengakuan resmi atas keterampilan yang dikuasai</p>
           </div>
         </div>
-        <div class="benefit-item">
-          <span class="benefit-icon">👥</span>
+        <div style="display: flex; align-items: flex-start; gap: 1rem; background: #f0f9ff; padding: 1.25rem; border-radius: 0.75rem; border: 1px solid #e0f2fe;">
+          <span style="font-size: 1.5rem; flex-shrink: 0;">👥</span>
           <div>
-            <strong>Networking</strong>
-            <p>Jaringan dengan sesama mahasiswa dan mentor</p>
+            <strong style="display: block; color: #111827; margin-bottom: 0.25rem;">Networking</strong>
+            <p style="color: #4b5563; font-size: 0.875rem; line-height: 1.5;">Jaringan dengan sesama mahasiswa dan mentor</p>
           </div>
         </div>
-        <div class="benefit-item">
-          <span class="benefit-icon">💼</span>
+        <div style="display: flex; align-items: flex-start; gap: 1rem; background: #f0f9ff; padding: 1.25rem; border-radius: 0.75rem; border: 1px solid #e0f2fe;">
+          <span style="font-size: 1.5rem; flex-shrink: 0;">💼</span>
           <div>
-            <strong>Portfolio</strong>
-            <p>Project nyata untuk meningkatkan CV</p>
+            <strong style="display: block; color: #111827; margin-bottom: 0.25rem;">Portfolio</strong>
+            <p style="color: #4b5563; font-size: 0.875rem; line-height: 1.5;">Project nyata untuk meningkatkan CV</p>
           </div>
         </div>
-        <div class="benefit-item">
-          <span class="benefit-icon">🚀</span>
+        <div style="display: flex; align-items: flex-start; gap: 1rem; background: #f0f9ff; padding: 1.25rem; border-radius: 0.75rem; border: 1px solid #e0f2fe;">
+          <span style="font-size: 1.5rem; flex-shrink: 0;">🚀</span>
           <div>
-            <strong>Skill Development</strong>
-            <p>Pengembangan skill industri yang relevan</p>
+            <strong style="display: block; color: #111827; margin-bottom: 0.25rem;">Skill Development</strong>
+            <p style="color: #4b5563; font-size: 0.875rem; line-height: 1.5;">Pengembangan skill industri yang relevan</p>
           </div>
         </div>
       </div>
 
-      <blockquote>
+      <blockquote style="border-left: 4px solid #3b82f6; padding-left: 1.5rem; margin: 2rem 0; color: #4b5563; font-style: normal; font-weight: 500;">
         "Antusiasme mahasiswa terlihat dari tingginya partisipasi serta minat untuk memperdalam kemampuan coding dan memahami lebih dalam proses pengembangan web."
       </blockquote>
 
-      <p>Melalui program ini, HIMSI Universitas Nusa Mandiri kembali menegaskan peran aktifnya dalam memberikan ruang belajar yang berkualitas, adaptif, dan relevan dengan kebutuhan industri teknologi saat ini.</p>
+      <p style="color: #4b5563; line-height: 1.625; margin-top: 1.5rem;">
+        Melalui program ini, HIMSI Universitas Nusa Mandiri kembali menegaskan peran aktifnya dalam memberikan ruang belajar yang berkualitas, adaptif, dan relevan dengan kebutuhan industri teknologi saat ini.
+      </p>
     `
   },
   {
@@ -101,42 +105,50 @@ const semuaBerita = [
     image: "/seminar.jpg",
     deskripsi: "HIMSI Universitas Nusa Mandiri sukses menggelar seminar kolaboratif dengan NIC bertema 'Transformasi Digital: Menyongsong Era Bisnis Berbasis Data dan AI'.",
     kontenLengkap: `
-      <p class="lead">Himpunan Mahasiswa Sistem Informasi (HIMSI) Universitas Nusa Mandiri sukses menyelenggarakan seminar kolaborasi bersama Nusa Informatics Community (NIC) dengan tema <em>"Transformasi Digital: Menyongsong Era Bisnis Berbasis Data dan AI"</em>. Kegiatan ini menjadi wadah penting bagi mahasiswa untuk memahami bagaimana teknologi data dan kecerdasan buatan berperan besar dalam perkembangan industri modern.</p>
+      <p style="font-size: 1.125rem; color: #374151; line-height: 1.75; margin-bottom: 1.5rem; font-weight: 500;">
+        Himpunan Mahasiswa Sistem Informasi (HIMSI) Universitas Nusa Mandiri sukses menyelenggarakan seminar kolaborasi bersama Nusa Informatics Community (NIC) dengan tema "Transformasi Digital: Menyongsong Era Bisnis Berbasis Data dan AI". Kegiatan ini menjadi wadah penting bagi mahasiswa untuk memahami bagaimana teknologi data dan kecerdasan buatan berperan besar dalam perkembangan industri modern.
+      </p>
 
-      <h3>🎤 Narasumber Berpengalaman</h3>
-      <p>Seminar ini menghadirkan narasumber inspiratif yang memaparkan beragam wawasan terkait:</p>
-      <ul>
-        <li>Implementasi Data Analytics dalam bisnis</li>
-        <li>Strategi AI untuk efisiensi operasional</li>
-        <li>Transformasi digital perusahaan tradisional</li>
+      <h3 style="font-size: 1.25rem; font-weight: 700; color: #111827; margin: 2rem 0 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid #3b82f6;">Narasumber Berpengalaman</h3>
+      <p style="color: #4b5563; margin-bottom: 1rem; line-height: 1.625;">Seminar ini menghadirkan narasumber inspiratif yang memaparkan beragam wawasan terkait:</p>
+      <ul style="color: #4b5563; list-style-type: disc; padding-left: 1.25rem; margin-bottom: 1.5rem; line-height: 1.625;">
+        <li style="margin-bottom: 0.5rem;">Implementasi Data Analytics dalam bisnis</li>
+        <li style="margin-bottom: 0.5rem;">Strategi AI untuk efisiensi operasional</li>
+        <li style="margin-bottom: 0.5rem;">Transformasi digital perusahaan tradisional</li>
         <li>Peluang karir di era digital</li>
       </ul>
 
-      <h3>💡 Highlights Materi</h3>
-      <div class="highlight-grid">
-        <div class="highlight-card">
-          <h4>Data-Driven Decision Making</h4>
-          <p>Bagaimana data menjadi pondasi pengambilan keputusan strategis dalam bisnis modern</p>
+      <h3 style="font-size: 1.25rem; font-weight: 700; color: #111827; margin: 2rem 0 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid #3b82f6;">Highlights Materi</h3>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin: 1.5rem 0;">
+        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 0.75rem; padding: 1.5rem;">
+          <h4 style="font-size: 1.125rem; font-weight: 600; color: #111827; margin-bottom: 0.75rem;">Data-Driven Decision Making</h4>
+          <p style="color: #4b5563; line-height: 1.5;">Bagaimana data menjadi pondasi pengambilan keputusan strategis dalam bisnis modern</p>
         </div>
-        <div class="highlight-card">
-          <h4>AI Implementation</h4>
-          <p>Studi kasus penerapan AI dalam meningkatkan customer experience dan operational excellence</p>
+        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 0.75rem; padding: 1.5rem;">
+          <h4 style="font-size: 1.125rem; font-weight: 600; color: #111827; margin-bottom: 0.75rem;">AI Implementation</h4>
+          <p style="color: #4b5563; line-height: 1.5;">Studi kasus penerapan AI dalam meningkatkan customer experience dan operational excellence</p>
         </div>
-        <div class="highlight-card">
-          <h4>Digital Transformation Roadmap</h4>
-          <p>Langkah-langkah strategis menuju transformasi digital yang berhasil</p>
+        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 0.75rem; padding: 1.5rem;">
+          <h4 style="font-size: 1.125rem; font-weight: 600; color: #111827; margin-bottom: 0.75rem;">Digital Transformation Roadmap</h4>
+          <p style="color: #4b5563; line-height: 1.5;">Langkah-langkah strategis menuju transformasi digital yang berhasil</p>
         </div>
       </div>
 
-      <h3>👥 Interaksi Peserta</h3>
-      <p>Antusiasme peserta terlihat jelas sepanjang kegiatan. Para mahasiswa aktif berdiskusi, mengajukan pertanyaan, serta berinteraksi langsung dengan narasumber untuk memperdalam pemahaman mereka. Suasana seminar berlangsung dinamis, mencerminkan semangat belajar dan minat tinggi peserta terhadap isu-isu teknologi yang semakin relevan dengan kebutuhan industri saat ini.</p>
+      <h3 style="font-size: 1.25rem; font-weight: 700; color: #111827; margin: 2rem 0 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid #3b82f6;">Interaksi Peserta</h3>
+      <p style="color: #4b5563; line-height: 1.625; margin-bottom: 1.5rem;">
+        Antusiasme peserta terlihat jelas sepanjang kegiatan. Para mahasiswa aktif berdiskusi, mengajukan pertanyaan, serta berinteraksi langsung dengan narasumber untuk memperdalam pemahaman mereka. Suasana seminar berlangsung dinamis, mencerminkan semangat belajar dan minat tinggi peserta terhadap isu-isu teknologi yang semakin relevan dengan kebutuhan industri saat ini.
+      </p>
 
-      <div class="testimonial">
-        <p>"Seminar ini membuka wawasan saya tentang bagaimana data dan AI tidak hanya sekadar tren, tetapi sudah menjadi kebutuhan strategis dalam bisnis."</p>
-        <cite>- Peserta Seminar</cite>
+      <div style="background: #f0f9ff; border-left: 4px solid #3b82f6; padding: 1.5rem; margin: 2rem 0; border-radius: 0 0.5rem 0.5rem 0;">
+        <p style="color: #1e40af; font-style: normal; font-weight: 500; margin-bottom: 0.5rem;">
+          "Seminar ini membuka wawasan saya tentang bagaimana data dan AI tidak hanya sekadar tren, tetapi sudah menjadi kebutuhan strategis dalam bisnis."
+        </p>
+        <cite style="color: #6b7280; font-size: 0.875rem;">- Peserta Seminar</cite>
       </div>
 
-      <p>Melalui terselenggaranya seminar ini, HIMSI Universitas Nusa Mandiri menegaskan komitmennya dalam menghadirkan kegiatan edukatif yang berkualitas dan berkelanjutan. HIMSI terus berupaya menyediakan ruang pengembangan pengetahuan yang selaras dengan perkembangan zaman, guna mempersiapkan mahasiswa menjadi generasi yang adaptif, kompeten, dan siap menghadapi tantangan era digital.</p>
+      <p style="color: #4b5563; line-height: 1.625;">
+        Melalui terselenggaranya seminar ini, HIMSI Universitas Nusa Mandiri menegaskan komitmennya dalam menghadirkan kegiatan edukatif yang berkualitas dan berkelanjutan. HIMSI terus berupaya menyediakan ruang pengembangan pengetahuan yang selaras dengan perkembangan zaman, guna mempersiapkan mahasiswa menjadi generasi yang adaptif, kompeten, dan siap menghadapi tantangan era digital.
+      </p>
     `
   },
   {
@@ -150,70 +162,76 @@ const semuaBerita = [
     image: "/stubanHimsi.jpg",
     deskripsi: "HIMSI UNM berkolaborasi dengan HIMASI STT NF menyelenggarakan Studi Banding bertema 'Menguatkan Sinergi, Membangun Kolaborasi'.",
     kontenLengkap: `
-      <p class="lead">Dalam upaya mempererat silaturahmi, memperluas wawasan kelembagaan, serta meningkatkan kualitas organisasi kemahasiswaan, Himpunan Mahasiswa Sistem Informasi (HIMSI) Universitas Nusa Mandiri berkolaborasi dengan Himpunan Mahasiswa Sistem Informasi (HIMASI) Sekolah Tinggi Teknologi Nurul Fikri (STTNF) dalam kegiatan Studi Banding bertema <em>"Menguatkan Sinergi, Membangun Kolaborasi."</em> Kegiatan ini menjadi forum strategis bagi kedua himpunan untuk saling bertukar pengalaman dan wawasan terkait pengelolaan organisasi.</p>
+      <p style="font-size: 1.125rem; color: #374151; line-height: 1.75; margin-bottom: 1.5rem; font-weight: 500;">
+        Dalam upaya mempererat silaturahmi, memperluas wawasan kelembagaan, serta meningkatkan kualitas organisasi kemahasiswaan, Himpunan Mahasiswa Sistem Informasi (HIMSI) Universitas Nusa Mandiri berkolaborasi dengan Himpunan Mahasiswa Sistem Informasi (HIMASI) Sekolah Tinggi Teknologi Nurul Fikri (STTNF) dalam kegiatan Studi Banding bertema "Menguatkan Sinergi, Membangun Kolaborasi." Kegiatan ini menjadi forum strategis bagi kedua himpunan untuk saling bertukar pengalaman dan wawasan terkait pengelolaan organisasi.
+      </p>
 
-      <h3>🎯 Agenda Kegiatan</h3>
-      <div class="agenda-timeline">
-        <div class="agenda-item">
-          <span class="agenda-time">09:00 - 09:30</span>
-          <div class="agenda-content">
-            <h4>Registrasi & Pembukaan</h4>
-            <p>Sambutan dari perwakilan kedua himpunan</p>
+      <h3 style="font-size: 1.25rem; font-weight: 700; color: #111827; margin: 2rem 0 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid #3b82f6;">Agenda Kegiatan</h3>
+      <div style="margin: 1.5rem 0;">
+        <div style="display: flex; margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid #e5e7eb;">
+          <span style="flex-shrink: 0; width: 120px; color: #111827; font-weight: 600;">09:00 - 09:30</span>
+          <div>
+            <h4 style="font-size: 1.125rem; font-weight: 600; color: #111827; margin-bottom: 0.25rem;">Registrasi & Pembukaan</h4>
+            <p style="color: #4b5563; line-height: 1.5;">Sambutan dari perwakilan kedua himpunan</p>
           </div>
         </div>
-        <div class="agenda-item">
-          <span class="agenda-time">09:30 - 11:00</span>
-          <div class="agenda-content">
-            <h4>Presentasi Program Kerja</h4>
-            <p>Sharing best practices dan program unggulan masing-masing himpunan</p>
+        <div style="display: flex; margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid #e5e7eb;">
+          <span style="flex-shrink: 0; width: 120px; color: #111827; font-weight: 600;">09:30 - 11:00</span>
+          <div>
+            <h4 style="font-size: 1.125rem; font-weight: 600; color: #111827; margin-bottom: 0.25rem;">Presentasi Program Kerja</h4>
+            <p style="color: #4b5563; line-height: 1.5;">Sharing best practices dan program unggulan masing-masing himpunan</p>
           </div>
         </div>
-        <div class="agenda-item">
-          <span class="agenda-time">11:00 - 12:30</span>
-          <div class="agenda-content">
-            <h4>Diskusi Interaktif</h4>
-            <p>Forum tanya jawab dan brainstorming ide kolaborasi</p>
+        <div style="display: flex; margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid #e5e7eb;">
+          <span style="flex-shrink: 0; width: 120px; color: #111827; font-weight: 600;">11:00 - 12:30</span>
+          <div>
+            <h4 style="font-size: 1.125rem; font-weight: 600; color: #111827; margin-bottom: 0.25rem;">Diskusi Interaktif</h4>
+            <p style="color: #4b5563; line-height: 1.5;">Forum tanya jawab dan brainstorming ide kolaborasi</p>
           </div>
         </div>
-        <div class="agenda-item">
-          <span class="agenda-time">12:30 - 13:30</span>
-          <div class="agenda-content">
-            <h4>Ishoma & Networking</h4>
-            <p>Sesi informal untuk mempererat hubungan</p>
+        <div style="display: flex; margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid #e5e7eb;">
+          <span style="flex-shrink: 0; width: 120px; color: #111827; font-weight: 600;">12:30 - 13:30</span>
+          <div>
+            <h4 style="font-size: 1.125rem; font-weight: 600; color: #111827; margin-bottom: 0.25rem;">Ishoma & Networking</h4>
+            <p style="color: #4b5563; line-height: 1.5;">Sesi informal untuk mempererat hubungan</p>
           </div>
         </div>
-        <div class="agenda-item">
-          <span class="agenda-time">13:30 - 15:00</span>
-          <div class="agenda-content">
-            <h4>Action Plan & Penutupan</h4>
-            <p>Penyusunan rencana kolaborasi dan penutupan acara</p>
+        <div style="display: flex;">
+          <span style="flex-shrink: 0; width: 120px; color: #111827; font-weight: 600;">13:30 - 15:00</span>
+          <div>
+            <h4 style="font-size: 1.125rem; font-weight: 600; color: #111827; margin-bottom: 0.25rem;">Action Plan & Penutupan</h4>
+            <p style="color: #4b5563; line-height: 1.5;">Penyusunan rencana kolaborasi dan penutupan acara</p>
           </div>
         </div>
       </div>
 
-      <h3>🤝 Hasil yang Dicapai</h3>
-      <p>Melalui studi banding ini, HIMSI Universitas Nusa Mandiri dan HIMASI STTNF saling berbagi praktik terbaik, ide pengembangan program kerja, serta strategi untuk meningkatkan kualitas tata kelola organisasi kemahasiswaan. Pertemuan ini tidak hanya berlangsung dalam nuansa formal, tetapi juga menjadi ruang penting untuk mempererat hubungan antarlembaga dan membuka peluang kolaborasi yang lebih kuat di masa mendatang.</p>
+      <h3 style="font-size: 1.25rem; font-weight: 700; color: #111827; margin: 2rem 0 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid #3b82f6;">Hasil yang Dicapai</h3>
+      <p style="color: #4b5563; line-height: 1.625; margin-bottom: 1.5rem;">
+        Melalui studi banding ini, HIMSI Universitas Nusa Mandiri dan HIMASI STTNF saling berbagi praktik terbaik, ide pengembangan program kerja, serta strategi untuk meningkatkan kualitas tata kelola organisasi kemahasiswaan. Pertemuan ini tidak hanya berlangsung dalam nuansa formal, tetapi juga menjadi ruang penting untuk mempererat hubungan antarlembaga dan membuka peluang kolaborasi yang lebih kuat di masa mendatang.
+      </p>
 
-      <div class="outcome-grid">
-        <div class="outcome-item">
-          <span class="outcome-number">5+</span>
-          <p>Ide Program Kerja Baru</p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
+        <div style="text-align: center; background: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #e2e8f0;">
+          <span style="font-size: 2rem; font-weight: 700; color: #3b82f6; display: block; margin-bottom: 0.5rem;">5+</span>
+          <p style="color: #4b5563; font-weight: 600;">Ide Program Kerja Baru</p>
         </div>
-        <div class="outcome-item">
-          <span class="outcome-number">3</span>
-          <p>Rencana Kolaborasi</p>
+        <div style="text-align: center; background: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #e2e8f0;">
+          <span style="font-size: 2rem; font-weight: 700; color: #3b82f6; display: block; margin-bottom: 0.5rem;">3</span>
+          <p style="color: #4b5563; font-weight: 600;">Rencana Kolaborasi</p>
         </div>
-        <div class="outcome-item">
-          <span class="outcome-number">100%</span>
-          <p>Peningkatan Sinergi</p>
+        <div style="text-align: center; background: #f8fafc; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #e2e8f0;">
+          <span style="font-size: 2rem; font-weight: 700; color: #3b82f6; display: block; margin-bottom: 0.5rem;">100%</span>
+          <p style="color: #4b5563; font-weight: 600;">Peningkatan Sinergi</p>
         </div>
       </div>
 
-      <blockquote>
+      <blockquote style="border-left: 4px solid #3b82f6; padding-left: 1.5rem; margin: 2rem 0; color: #4b5563; font-style: normal; font-weight: 500;">
         "Acara yang digelar di Rooftop Kampus A STTNF, Depok, berlangsung dengan penuh antusiasme dari kedua belah pihak. Sesi diskusi, presentasi program kerja, hingga forum tanya jawab interaktif berlangsung dinamis, menciptakan suasana yang inspiratif dan komunikatif bagi seluruh peserta."
       </blockquote>
 
-      <p>Melalui kegiatan ini, HIMSI Universitas Nusa Mandiri dan HIMASI STTNF berharap dapat terus memperkuat sinergi yang terbangun serta mendorong terciptanya kerja sama berkelanjutan dalam pengembangan organisasi kemahasiswaan, guna menghadirkan lingkungan yang lebih inovatif dan berkualitas.</p>
+      <p style="color: #4b5563; line-height: 1.625; margin-top: 1.5rem;">
+        Melalui kegiatan ini, HIMSI Universitas Nusa Mandiri dan HIMASI STTNF berharap dapat terus memperkuat sinergi yang terbangun serta mendorong terciptanya kerja sama berkelanjutan dalam pengembangan organisasi kemahasiswaan, guna menghadirkan lingkungan yang lebih inovatif dan berkualitas.
+      </p>
     `
   },
   {
@@ -227,83 +245,93 @@ const semuaBerita = [
     image: "/minkref.jpg",
     deskripsi: "HIMSI Universitas Nusa Mandiri berkolaborasi dengan HIMMA sukses menyelenggarakan MinKref (Mini Kreatif), workshop desain poster.",
     kontenLengkap: `
-      <p class="lead">Dalam upaya mengembangkan potensi dan kreativitas mahasiswa di bidang desain grafis, Himpunan Mahasiswa Sistem Informasi (HIMSI) Universitas Nusa Mandiri berkolaborasi dengan Himpunan Mahasiswa Manajemen (HIMMA) sukses menyelenggarakan kegiatan <em>MinKref (Mini Kreatif)</em>, sebuah workshop desain poster yang menghadirkan suasana penuh warna dan inovasi.</p>
+      <p style="font-size: 1.125rem; color: #374151; line-height: 1.75; margin-bottom: 1.5rem; font-weight: 500;">
+        Dalam upaya mengembangkan potensi dan kreativitas mahasiswa di bidang desain grafis, Himpunan Mahasiswa Sistem Informasi (HIMSI) Universitas Nusa Mandiri berkolaborasi dengan Himpunan Mahasiswa Manajemen (HIMMA) sukses menyelenggarakan kegiatan MinKref (Mini Kreatif), sebuah workshop desain poster yang menghadirkan suasana penuh warna dan inovasi.
+      </p>
 
-      <h3>🎨 Materi Workshop</h3>
-      <p>Kegiatan ini menjadi ruang pembelajaran bagi peserta untuk memahami:</p>
-      <div class="workshop-grid">
-        <div class="workshop-module">
-          <h4>📐 Dasar Desain Grafis</h4>
-          <ul>
-            <li>Prinsip-prinsip desain (kontras, alignment, repetition, proximity)</li>
-            <li>Pemilihan warna dan tipografi</li>
+      <h3 style="font-size: 1.25rem; font-weight: 700; color: #111827; margin: 2rem 0 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid #3b82f6;">Materi Workshop</h3>
+      <p style="color: #4b5563; margin-bottom: 1rem; line-height: 1.625;">Kegiatan ini menjadi ruang pembelajaran bagi peserta untuk memahami:</p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin: 1.5rem 0;">
+        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 0.75rem; padding: 1.5rem;">
+          <h4 style="font-size: 1.125rem; font-weight: 600; color: #111827; margin-bottom: 0.75rem;">Dasar Desain Grafis</h4>
+          <ul style="color: #4b5563; list-style-type: disc; padding-left: 1.25rem; line-height: 1.5;">
+            <li style="margin-bottom: 0.5rem;">Prinsip-prinsip desain (kontras, alignment, repetition, proximity)</li>
+            <li style="margin-bottom: 0.5rem;">Pemilihan warna dan tipografi</li>
             <li>Komposisi layout yang efektif</li>
           </ul>
         </div>
-        <div class="workshop-module">
-          <h4>🛠️ Tools & Software</h4>
-          <ul>
-            <li>Pengenalan Canva untuk pemula</li>
-            <li>Tips dan tricks desain efisien</li>
+        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 0.75rem; padding: 1.5rem;">
+          <h4 style="font-size: 1.125rem; font-weight: 600; color: #111827; margin-bottom: 0.75rem;">Tools & Software</h4>
+          <ul style="color: #4b5563; list-style-type: disc; padding-left: 1.25rem; line-height: 1.5;">
+            <li style="margin-bottom: 0.5rem;">Pengenalan Canva untuk pemula</li>
+            <li style="margin-bottom: 0.5rem;">Tips dan tricks desain efisien</li>
             <li>Resource gratis untuk desain</li>
           </ul>
         </div>
-        <div class="workshop-module">
-          <h4>🚀 Praktik Langsung</h4>
-          <ul>
-            <li>Membuat poster dari konsep hingga final</li>
-            <li>Teknik visual storytelling</li>
+        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 0.75rem; padding: 1.5rem;">
+          <h4 style="font-size: 1.125rem; font-weight: 600; color: #111827; margin-bottom: 0.75rem;">Praktik Langsung</h4>
+          <ul style="color: #4b5563; list-style-type: disc; padding-left: 1.25rem; line-height: 1.5;">
+            <li style="margin-bottom: 0.5rem;">Membuat poster dari konsep hingga final</li>
+            <li style="margin-bottom: 0.5rem;">Teknik visual storytelling</li>
             <li>Optimasi untuk media sosial</li>
           </ul>
         </div>
       </div>
 
-      <h3>🌟 Highlights Kegiatan</h3>
-      <div class="highlights-container">
-        <div class="highlight-feature">
-          <span class="highlight-icon">💫</span>
+      <h3 style="font-size: 1.25rem; font-weight: 700; color: #111827; margin: 2rem 0 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid #3b82f6;">Highlights Kegiatan</h3>
+      <div style="display: grid; gap: 1rem; margin: 1.5rem 0;">
+        <div style="display: flex; align-items: flex-start; gap: 1rem; background: #f8fafc; padding: 1.25rem; border-radius: 0.75rem; border: 1px solid #e2e8f0;">
+          <span style="font-size: 1.5rem; flex-shrink: 0;">💫</span>
           <div>
-            <h4>Hands-on Session</h4>
-            <p>Peserta langsung mempraktikkan teknik desain dengan pendampingan mentor</p>
+            <h4 style="font-size: 1.125rem; font-weight: 600; color: #111827; margin-bottom: 0.25rem;">Hands-on Session</h4>
+            <p style="color: #4b5563; line-height: 1.5;">Peserta langsung mempraktikkan teknik desain dengan pendampingan mentor</p>
           </div>
         </div>
-        <div class="highlight-feature">
-          <span class="highlight-icon">🎯</span>
+        <div style="display: flex; align-items: flex-start; gap: 1rem; background: #f8fafc; padding: 1.25rem; border-radius: 0.75rem; border: 1px solid #e2e8f0;">
+          <span style="font-size: 1.5rem; flex-shrink: 0;">🎯</span>
           <div>
-            <h4>Design Challenge</h4>
-            <p>Kompetisi kecil dengan tema tertentu untuk mengasah kreativitas</p>
+            <h4 style="font-size: 1.125rem; font-weight: 600; color: #111827; margin-bottom: 0.25rem;">Design Challenge</h4>
+            <p style="color: #4b5563; line-height: 1.5;">Kompetisi kecil dengan tema tertentu untuk mengasah kreativitas</p>
           </div>
         </div>
-        <div class="highlight-feature">
-          <span class="highlight-icon">🏆</span>
+        <div style="display: flex; align-items: flex-start; gap: 1rem; background: #f8fafc; padding: 1.25rem; border-radius: 0.75rem; border: 1px solid #e2e8f0;">
+          <span style="font-size: 1.5rem; flex-shrink: 0;">🏆</span>
           <div>
-            <h4>Best Design Award</h4>
-            <p>Penghargaan untuk desain terbaik hasil workshop</p>
+            <h4 style="font-size: 1.125rem; font-weight: 600; color: #111827; margin-bottom: 0.25rem;">Best Design Award</h4>
+            <p style="color: #4b5563; line-height: 1.5;">Penghargaan untuk desain terbaik hasil workshop</p>
           </div>
         </div>
       </div>
 
-      <h3>👥 Testimoni Peserta</h3>
-      <div class="testimonial-grid">
-        <div class="testimonial-card">
-          <p>"Workshopnya sangat menyenangkan! Saya yang awalnya tidak bisa desain sama sekali, sekarang bisa membuat poster yang menarik."</p>
-          <cite>- Sarah, Participant</cite>
+      <h3 style="font-size: 1.25rem; font-weight: 700; color: #111827; margin: 2rem 0 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid #3b82f6;">Testimoni Peserta</h3>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin: 1.5rem 0;">
+        <div style="background: #f0f9ff; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #e0f2fe;">
+          <p style="color: #1e40af; font-style: normal; margin-bottom: 0.75rem; line-height: 1.5;">
+            "Workshopnya sangat menyenangkan! Saya yang awalnya tidak bisa desain sama sekali, sekarang bisa membuat poster yang menarik."
+          </p>
+          <cite style="color: #6b7280; font-size: 0.875rem; font-style: normal;">- Sarah, Participant</cite>
         </div>
-        <div class="testimonial-card">
-          <p>"Mentornya sabar banget dalam ngajarin, dan materinya mudah dipahami bahkan untuk pemula."</p>
-          <cite>- Rizki, Participant</cite>
+        <div style="background: #f0f9ff; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #e0f2fe;">
+          <p style="color: #1e40af; font-style: normal; margin-bottom: 0.75rem; line-height: 1.5;">
+            "Mentornya sabar banget dalam ngajarin, dan materinya mudah dipahami bahkan untuk pemula."
+          </p>
+          <cite style="color: #6b7280; font-size: 0.875rem; font-style: normal;">- Rizki, Participant</cite>
         </div>
       </div>
 
-      <p>Workshop berlangsung hangat dengan antusiasme peserta yang aktif bertanya, berdiskusi, dan mencoba berbagai gaya desain. Semangat kolaboratif yang terbangun membuat sesi semakin dinamis dan menyenangkan, memperlihatkan minat besar mahasiswa terhadap dunia kreatif.</p>
+      <p style="color: #4b5563; line-height: 1.625; margin-bottom: 1.5rem;">
+        Workshop berlangsung hangat dengan antusiasme peserta yang aktif bertanya, berdiskusi, dan mencoba berbagai gaya desain. Semangat kolaboratif yang terbangun membuat sesi semakin dinamis dan menyenangkan, memperlihatkan minat besar mahasiswa terhadap dunia kreatif.
+      </p>
 
-      <div class="cta-section">
-        <h3>📸 Lihat Karya Peserta</h3>
-        <p>Ingin melihat hasil karya desain poster dari peserta workshop? Kunjungi Instagram kami untuk melihat gallery lengkapnya!</p>
-        <a href="#" class="instagram-cta">📷 Lihat Gallery</a>
+      <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 0.75rem; padding: 1.5rem; margin: 2rem 0;">
+        <h3 style="font-size: 1.25rem; font-weight: 700; color: #111827; margin-bottom: 0.5rem;">Lihat Karya Peserta</h3>
+        <p style="color: #4b5563; margin-bottom: 1rem; line-height: 1.5;">Ingin melihat hasil karya desain poster dari peserta workshop? Kunjungi Instagram kami untuk melihat gallery lengkapnya!</p>
+        <a href="#" style="display: inline-block; background: #3b82f6; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem; text-decoration: none; font-weight: 600; transition: background-color 0.2s;">Lihat Gallery</a>
       </div>
 
-      <p>Melalui MinKref, peserta mendapatkan pengalaman langsung untuk berkreasi sambil bertukar ide, sekaligus menambah wawasan dalam bidang desain grafis. Kegiatan ini menjadi bukti nyata komitmen HIMSI dan HIMMA dalam menyediakan ruang pengembangan bakat yang positif, kreatif, dan inspiratif bagi mahasiswa.</p>
+      <p style="color: #4b5563; line-height: 1.625;">
+        Melalui MinKref, peserta mendapatkan pengalaman langsung untuk berkreasi sambil bertukar ide, sekaligus menambah wawasan dalam bidang desain grafis. Kegiatan ini menjadi bukti nyata komitmen HIMSI dan HIMMA dalam menyediakan ruang pengembangan bakat yang positif, kreatif, dan inspiratif bagi mahasiswa.
+      </p>
     `
   }
 ]
@@ -325,7 +353,7 @@ export default function DetailBerita() {
           <p className="text-gray-600 mb-6">Maaf, berita yang Anda cari tidak dapat ditemukan.</p>
           <Link 
             href="/#berita"
-            className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary/90 transition-colors"
+            className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
           >
             <ArrowLeft size={20} />
             Kembali ke Berita
@@ -356,7 +384,7 @@ export default function DetailBerita() {
           <div className="flex items-center justify-between">
             <Link 
               href="/#berita"
-              className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors bg-white/50 backdrop-blur rounded-lg px-4 py-2 border border-gray-200"
+              className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 transition-colors bg-white/50 backdrop-blur rounded-lg px-4 py-2 border border-gray-200"
             >
               <ArrowLeft size={20} />
               Kembali ke Berita
@@ -364,7 +392,7 @@ export default function DetailBerita() {
             
             <button
               onClick={shareBerita}
-              className="inline-flex items-center gap-2 text-gray-600 hover:text-primary transition-colors bg-white/50 backdrop-blur rounded-lg px-4 py-2 border border-gray-200"
+              className="inline-flex items-center gap-2 text-gray-600 hover:text-blue-600 transition-colors bg-white/50 backdrop-blur rounded-lg px-4 py-2 border border-gray-200"
             >
               <Share2 size={18} />
               Bagikan
@@ -384,7 +412,7 @@ export default function DetailBerita() {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
           <div className="absolute bottom-6 left-6 right-6 text-white">
-            <span className="inline-block bg-primary/90 text-white px-3 py-1 rounded-full text-sm font-medium mb-3">
+            <span className="inline-block bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium mb-3">
               {berita.kategori}
             </span>
             <h1 className="text-3xl md:text-4xl font-bold mb-2 leading-tight">
@@ -447,13 +475,13 @@ export default function DetailBerita() {
         {/* Article Content */}
         <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8 border border-gray-100">
           {/* Short Description */}
-          <p className="text-xl text-gray-700 mb-8 leading-relaxed border-l-4 border-primary pl-4 italic">
+          <p className="text-lg text-gray-700 mb-8 leading-relaxed border-l-4 border-blue-600 pl-4 bg-blue-50 py-3 rounded-r">
             {berita.deskripsi}
           </p>
 
           {/* Full Content */}
           <div 
-            className="article-content"
+            className="prose prose-lg max-w-none"
             dangerouslySetInnerHTML={{ __html: berita.kontenLengkap }}
           />
         </div>
@@ -469,7 +497,7 @@ export default function DetailBerita() {
           </Link>
           <button
             onClick={shareBerita}
-            className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-xl hover:bg-primary/90 transition-colors shadow-lg shadow-primary/25"
+            className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-xl hover:bg-blue-700 transition-colors shadow-lg shadow-blue-500/25"
           >
             <Share2 size={20} />
             Bagikan Berita Ini
